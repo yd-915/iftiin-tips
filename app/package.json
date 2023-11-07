@@ -21,6 +21,7 @@
     "prettier:fix": "yarn prettier --write . --check '!.db'",
     "prettier:check": "yarn prettier --check . --check '!.db'",
     "logs:staging": "fly logs -a lightsats",
+    "postinstall": "prisma generate",
     "logs:production": "fly logs -a lightsats-prod",
     "items:deletePlaceholders": "cli-confirm \"Confirm no outstanding changes\" && ts-node deletePlaceholders.ts && yarn prettier:fix",
     "items:placeholders": "cli-confirm \"Confirm no outstanding changes\" && ts-node deletePlaceholders.ts && ts-node generateItemPlaceholders.ts && yarn prettier:fix",
