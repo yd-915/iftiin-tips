@@ -9,7 +9,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url = env("DATABASE_URL")
+  url = "postgres://postgres:dbC-fAEcbdeGgg3g3BfbBfc5-BF5cgBc@viaduct.proxy.rlwy.net:56118/railway"
 }
 
 // from https://next-auth.js.org/adapters/prisma
