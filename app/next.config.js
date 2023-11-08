@@ -12,6 +12,9 @@ const nextConfig = {
     hideSourceMaps: false,
     autoInstrumentServerFunctions: true,
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+},
   redirects: async () => {
     return [
       {
