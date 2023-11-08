@@ -5,16 +5,12 @@ const { i18n } = require("./next-i18next.config");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+   eslint: {
+    ignoreDuringBuilds: true,
+},
   reactStrictMode: true,
   swcMinify: true,
   i18n,
-  sentry: {
-    hideSourceMaps: false,
-    autoInstrumentServerFunctions: true,
-  },
-  eslint: {
-    ignoreDuringBuilds: true,
-},
   redirects: async () => {
     return [
       {
