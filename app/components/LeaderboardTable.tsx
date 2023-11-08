@@ -461,6 +461,7 @@ function LeaderboardUser({ user, theme }: LeaderboardUserProps) {
               src={`/leaderboards/${theme.toLowerCase()}/hat.png`}
               width={60}
               height={60}
+              alt="hat"
             />
           </div>
         )}
