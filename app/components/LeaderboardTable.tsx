@@ -95,6 +95,7 @@ export function LeaderboardTable({
           src={`/leaderboards/${theme.toLowerCase()}/logo.png`}
           width={300}
           height={200}
+          alt="logo"
           objectFit="contain"
         />
       )}
