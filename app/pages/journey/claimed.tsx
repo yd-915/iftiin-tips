@@ -58,7 +58,7 @@ const ClaimedPage: NextPage = () => {
 
       <Spacer y={2} />
       <Text h5>{t("claimed.getStarted")}</Text>
-      <NextImage src="/images/journey/rocket.png" width={100} height={100} />
+      <NextImage src="/images/journey/rocket.png" width={100} height={100} alt="rocket" />
       <Spacer />
 
       <MyBitcoinJourneyFooter
